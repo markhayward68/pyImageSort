@@ -1,0 +1,3 @@
+# pyImageSort - OCR and sort images
+
+Python project for sorting digitised images using OCR etc. This is only the start so there is not much to see yet... 

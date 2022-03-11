@@ -1,9 +1,10 @@
 #
-# Name: pyImageSort.py
+# Name: pyImageSortMT.py
 #
 # Date 18/02/2022
 #
-# Description: Takes image(s) and extracts text for later processing...
+# Description: Takes image(s) and extracts text for later processing... 
+# add multithreading... or multiprocessing, whichever works best really 
 #
 # Requirements: sudo apt install tesseract-ocr
 # cmd line example: tesseract image_path text_result.txt -l eng --psm 6

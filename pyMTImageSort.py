@@ -10,6 +10,7 @@
 # cmd line: tesseract image_path text_result.txt -l eng --psm 6
 #
  
+from asyncio.windows_events import NULL
 import os
 # import re 
 import multiprocessing 
@@ -22,12 +23,11 @@ jobs = []
 
 
 def OCRImage(i, fn): 
-    print("Process " + str(i + 1) + ":Output " + fn)
-    # output = pytesseract.image_to_string(fn)
+    output = pytesseract.image_to_string(fn)
 
     with open(fn + ".txt", 'w') as f:
-        # f.writelines(output)
-        f.writelines("Process " + str(i + 1) + ":Output " + fn)
+        # f.writelines("Process " + str(i + 1) + ":Output " + fn)
+        f.writelines(output)
 
 
 if __name__ == '__main__': 
@@ -36,13 +36,10 @@ if __name__ == '__main__':
     for filename in os.listdir(directory):
         if os.path.isfile(filename):
             if filename.endswith(".jpg"):
-                try:  
-                    f.open(filename + ".txt") 
-
-                    # do nothing... must be better way than this... 
-
-                    f.close()
-                except: 
+                if os.path.isfile(filename + ".txt"):  
+                    # do nothing... 
+                    pass
+                else: 
                     # imageNumber = os.path.splitext(filename)[0] - removes extension 
                     # imageNumber = re.search(r'\d+', filename).group(0) # returns number in filename  
 

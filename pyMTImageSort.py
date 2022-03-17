@@ -22,11 +22,12 @@ jobs = []
 
 
 def OCRImage(i, fn): 
-    output = pytesseract.image_to_string(fn)
+    print("Process " + str(i + 1) + ":Output " + fn)
+    # output = pytesseract.image_to_string(fn)
 
     with open(fn + ".txt", 'w') as f:
-        # f.writelines("Process number: " + str(i)) 
-        f.writelines(output) 
+        # f.writelines(output)
+        f.writelines("Process " + str(i + 1) + ":Output " + fn)
 
 
 if __name__ == '__main__': 
@@ -37,6 +38,10 @@ if __name__ == '__main__':
             if filename.endswith(".jpg"):
                 try:  
                     f.open(filename + ".txt") 
+
+                    # do nothing... must be better way than this... 
+
+                    f.close()
                 except: 
                     # imageNumber = os.path.splitext(filename)[0] - removes extension 
                     # imageNumber = re.search(r'\d+', filename).group(0) # returns number in filename  

@@ -29,8 +29,9 @@ for filename in os.listdir(directory):
                     f.open(filename + ".txt") 
                 except: 
                     # imageNumber = os.path.splitext(filename)[0] - removes extension 
+                    # imageNumber = re.search(r'\d+', filename).group(0) - returns number in filename  
                     imageNumber = re.search(r'\d+', filename).group(0) 
-
+                    
                     if (int(imageNumber) % 2) == 0: 
                         # process 1
                         output = pytesseract.image_to_string(filename)

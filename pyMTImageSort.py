@@ -7,6 +7,7 @@
 # intention is to run it all in a docker container 
 #  
 # https://hub.docker.com/r/clearlinux/tesseract-ocr 
+# https://hub.docker.com/r/tensorflow/tensorflow 
 #
 # Requirements: pip install tesseract 
 # cmd line: tesseract image_path text_result.txt -l eng --psm 6

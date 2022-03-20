@@ -1,0 +1,6 @@
+# docker build .
+# docker run --rm -ti <image id>
+
+FROM alpine
+COPY . /usr/src
+RUN apk update && apk add nano vim gcc nasm gdb 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# 
 # Name: pyMTImageSort.py
 #
 # Date 17/03/2022

@@ -18,3 +18,6 @@ pip freeze > requirements.txt
 pip install -r requirements.txt 
 
 Run 'python3 pyImageSort.py' from directory with images. 
+
+grep -i '<search term>' <files>
+The -i ignores the case of the strings, also use '<term1 >\|<term 2>\|...' for multiple serach terms.

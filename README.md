@@ -22,4 +22,4 @@ Run 'python3 pyImageSort.py' from directory with images.
 grep -i 'search term'
   
 The -i ignores the case of the strings.
-Use 'term1\\|term2\\|...' for multiple OR search terms.
+Use 'term1\\|term2\\|...' for multiple OR search terms. No idea how to AND yet...

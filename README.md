@@ -20,4 +20,5 @@ pip install -r requirements.txt
 Run 'python3 pyImageSort.py' from directory with images. 
 
 grep -i 'search term' file(s)
-The -i ignores the case of the strings, also use 'term1\|term2\|...' for multiple serach terms.
+  
+The -i ignores the case of the strings, also use 'term1\\|term2\\|...' for multiple serach terms.

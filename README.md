@@ -4,12 +4,12 @@ Python project for sorting digitised images using OCR etc. Ultimately the intent
 
 https://hub.docker.com/r/clearlinux/tesseract-ocr or https://hub.docker.com/r/tensorflow/tensorflow 
 
-Tensorflow is probably better than (or the Python image) as it runs as a simple command shell... Eventually, build a bespoke container using alpine Linux etc. 
+Tensorflow is probably better as it runs as a simple command shell... Eventually, build a bespoke container using alpine Linux etc. 
 
-Run 'sudo apt install tesseract-ocr' then
+First run 'sudo apt install tesseract-ocr' then...
 
 # pip installer 
-sudo apt-get install pip or sudo apk add py3-pip 
+sudo apt install pip or sudo apk add py3-pip 
 pip install --upgrade pip
 pip install <package>  
 Make sure to run 'pip install pytesseract' NOT 'tesseract' 

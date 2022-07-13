@@ -6,12 +6,12 @@ https://hub.docker.com/r/clearlinux/tesseract-ocr or https://hub.docker.com/r/te
 
 Tensorflow is probably better as it runs as a simple command shell... Eventually, build a bespoke container using alpine Linux etc. 
 
-First run 'sudo apt install tesseract-ocr' then...
 
 # pip installer 
+sudo apt install tesseract-ocr
 sudo apt install pip or sudo apk add py3-pip 
 pip install --upgrade pip
-pip install <package>  
+pip install <package> 
 Make sure to run 'pip install pytesseract' NOT 'tesseract' 
   
 pip freeze > requirements.txt 

@@ -16,3 +16,5 @@ Make sure to run 'pip install pytesseract' NOT 'tesseract'
   
 pip freeze > requirements.txt 
 pip install -r requirements.txt 
+
+Run 'python3 pyImageSort.py' from directory with images. 
